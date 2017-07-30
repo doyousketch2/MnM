@@ -614,7 +614,7 @@ function Lo .draw()
 
   elseif state == 'decode'  then
     gra .line( w1, h5,  w9,  h5  ) -- centerline
-    gra .print( 'Decode text from hintbook',  w5,  h9 -20  )
+    gra .print( 'Decode text from MM3 hintbook',  w5,  h9 -20  )
     gra .print( 'Next',  w9,  dpad -smallFontSize )
 
     gra .setColor( white )
