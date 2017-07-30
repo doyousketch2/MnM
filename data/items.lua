@@ -3,16 +3,16 @@ items  = {
   ['Armor']  = { -- name, min, max, equip, restrict
 
     {  '',               0,   0,   0,   ''                    },
-    {  'Padded Armor',   2,   0,   1,   'Max for S'           },
-    {  'Leather Armor',  3,   0,   1,   'Max for Dr'          },
-    {  'Scale Mail',     4,   0,   1,   'Max for B'           },
-    {  'Ring Mail',      5,   0,   1,   'Max for N'           },
     {  'Chain Mail',     6,   0,   1,   'Max for Ar, Ro'      },
-    {  'Splint Mail',    7,   0,   1,   'Max for Cl, Ra'      },
+    {  'Leather Armor',  3,   0,   1,   'Max for Dr'          },
+    {  'Padded Armor',   2,   0,   1,   'Max for S'           },
+    {  'Plate Armor',   10,   0,   1,   'Only K & P'          },
     {  'Plate Mail',     8,   0,   1,   'Only K & P'          },
-    {  'Plate Armor',   10,   0,   1,   'Only K & P'          },  },
+    {  'Ring Mail',      5,   0,   1,   'Max for N'           },
+    {  'Scale Mail',     4,   0,   1,   'Max for B'           },
+    {  'Splint Mail',    7,   0,   1,   'Max for Cl, Ra'      },  },
 
-  ['Wearables']  = { --, min, max, equip, restrict
+  ['Wearables']  = { --,min, max, equip, restrict
 
     {  '',               0,   0,   0,   ''                    },
     {  'Belt',           0,   0,   1,   'No restrictions'     },
@@ -24,7 +24,7 @@ items  = {
     {  'Robes',          1,   0,   1,   'No restrictions'     },
     {  'Shield',         4,   0,   1,   'No Dr, N, S, Ar'     },  },
 
-  ['1h Weapons']  = { --, min, max, equip, restrict
+  ['1h Weapons']  = { --,min, max, equip, restrict
 
     {  '',               0,   0,   0,   ''                    },
     {  'Broad Sword',    3,  12,   1,   'No Cl, Dr, N, S, B'  },
@@ -45,7 +45,7 @@ items  = {
     {  'Spear',          1,   9,   1,   'No Cl, S'            },
     {  'Wakazashi',      3,   9,   1,   'Only K & N'          },  },
 
-  ['2h Weapons']  = { --, min, max, equip, restrict
+  ['2h Weapons']  = { --,min, max, equip, restrict
 
     {  '',               0,   0,   0,   ''                    },
     {  'Bardiche',       4,  16,   2,   'No Cl, S, Dr'        },
