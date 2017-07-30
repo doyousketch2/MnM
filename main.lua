@@ -425,7 +425,7 @@ function decodeThis( letters )
     end -- for n, #nums
 
     if found == 0 then -- only test letters if it isn't found yet.
-      local alpha  = 'abcdefghijklmnopqrstuvwxyz'
+      local alpha  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
       for a = 1, #alpha do
         local alph  = string .sub( alpha, a, a )
         if let == alph then -- if we found it,   -a  is reverse location from front of list.
@@ -444,7 +444,7 @@ end -- decodeThis()
 
 function Lo .textinput( t )
   if state == 'decode' then
-    text  = text ..t
+    text  = text ..t :upper()
     decrypt  = decodeThis( text )
   end -- if state ==
 end -- Lo .textinput()
@@ -614,7 +614,7 @@ function Lo .draw()
 
   elseif state == 'decode'  then
     gra .line( w1, h5,  w9,  h5  ) -- centerline
-    gra .print( 'Decode text from MM3 hintbook',  w5,  h9 -20  )
+    gra .print( 'Decode text from MM3 hintbook',  w4,  h9 -20  )
     gra .print( 'Next',  w9,  dpad -smallFontSize )
 
     gra .setColor( white )
