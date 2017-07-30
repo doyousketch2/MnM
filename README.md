@@ -10,4 +10,10 @@ Press Space, or click Next, to switch state
 Click top-right corner to toggle item-type *(weapon, armor, etc...)*  
 
 Scroll to select item properties.  
-Compare items to see which will suit your needs.
+Compare items to see which will suit your needs.  
+
+![pic](https://pbs.twimg.com/media/DE5C5EyU0AIZ7Y1?format=png)  
+
+![pic](https://pbs.twimg.com/media/DE-8NXVXcAAS0LO?format=png)  
+
+![pic](https://pbs.twimg.com/media/DF_wFPKU0AEP9QI?format=png)  
