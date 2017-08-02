@@ -613,7 +613,6 @@ function Lo .draw()
     gra .print( 'Next',  w9,  dpad -smallFontSize )
 
   elseif state == 'decode'  then
-    gra .line( w1, h5,  w9,  h5  ) -- centerline
     gra .print( 'Decode text from MM3 hintbook',  w4,  h9 -20  )
     gra .print( 'Next',  w9,  dpad -smallFontSize )
 
@@ -621,6 +620,7 @@ function Lo .draw()
     gra .setFont( largeFont )
 
     gra .print( text,  w2,  h3  )
+    gra .line( w1, h5,  w9,  h5  ) -- centerline
     gra .print( decrypt, w2, h6 )
 
   end -- if state ==
