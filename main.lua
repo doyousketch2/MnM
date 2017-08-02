@@ -149,11 +149,10 @@ function Lo .load( arg )
   xlargeFont  = gra .newFont( xlargeFontSize )
 
   gra .setFont( smallFont )
+  key .setKeyRepeat( true ) -- hold key to repeat?  system determines interval
 end -- Lo .load(arg)
 
 --~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-key .setKeyRepeat( true ) -- hold key to repeat?  system determines interval
 
 function Lo .keypressed( key, scancode, isrepeat )
   if scancode == 'escape'  then  eve .quit()  end
@@ -554,7 +553,6 @@ function Lo .draw()
   elseif state == 'compare'  then
 
     gra .print( style,  w75,  upad  )
-    gra .line( w1, h5,  w9, h5 ) -- centerline,  rest is somewhat symmetrical
 
     gra .line( w25,     h25,  w25,    h3 )
     gra .line( w4 +20,  h25,  w4 +20, h3 )
@@ -565,6 +563,8 @@ function Lo .draw()
     gra .print( metal[1] [1],  w25 +5,  h25 )
     gra .print( attr[1] [1],   w4 +25,  h25 )
     gra .print( item[1] [1],   w66 +5,  h25 )
+
+    gra .line( w1, h5,  w9, h5 ) -- centerline
 
     gra .print( elem[2] [1],   lpad,    h7 )
     gra .print( metal[2] [1],  w25 +5,  h7 )
